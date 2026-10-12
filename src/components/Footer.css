@@ -1,0 +1,24 @@
+.footer {
+  background: var(--bg-dark);
+  border-top: 1px solid #000;
+  margin-top: 40px;
+}
+
+.footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.footer__brand {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.footer__text {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}

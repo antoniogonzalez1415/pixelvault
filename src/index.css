@@ -1,0 +1,93 @@
+:root {
+  --bg-main: #1b2838;
+  --bg-dark: #171a21;
+  --bg-card: #16202d;
+  --accent: #66c0f4;
+  --green: #a4d007;
+  --text: #c7d5e0;
+  --text-muted: #8f98a0;
+  --max-width: 1100px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text);
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #75b022, #588a1b);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.15);
+}
+
+.btn--blue {
+  background: linear-gradient(90deg, #06bfff, #2d73ff);
+}
+
+.message {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.message h1 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.message p {
+  margin-bottom: 20px;
+  color: var(--text-muted);
+}

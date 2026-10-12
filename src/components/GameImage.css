@@ -1,0 +1,31 @@
+.game-image--fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  aspect-ratio: 460 / 215;
+  padding: 8px;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(135deg, #1b2838, #2a475e 50%, #1b2838);
+}
+
+.game-image__icon {
+  font-size: 2rem;
+}
+
+.game-image__title {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Small thumbnail in the cart: icon only */
+.cart-item__image .game-image__title {
+  display: none;
+}
+
+.cart-item__image .game-image__icon {
+  font-size: 1.4rem;
+}
